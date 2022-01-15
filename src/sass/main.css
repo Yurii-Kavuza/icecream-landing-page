@@ -28,10 +28,8 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
 }
 
 a {

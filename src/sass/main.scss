@@ -7,6 +7,14 @@
 @import './base/common';
 @import './base/reset';
 
+@import './utils/hidden';
+@import './utils/variables';
+
+@import './shared/buttons';
+@import './shared/modal';
+@import './shared/titles';
+@import './shared/pre-titles';
+
 @import './components/about';
 @import './components/advantages';
 @import './components/contacts';
@@ -14,12 +22,5 @@
 @import './components/footer';
 @import './components/gallery';
 @import './components/hero-header';
+@import './components/hero';
 @import './components/products';
-
-@import './shared/buttons';
-@import './shared/modal';
-@import './shared/titles';
-@import './shared/pre-titles';
-
-@import './utils/hidden';
-@import './utils/variables';
