@@ -1,8 +1,3 @@
-.products__container {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -150,7 +145,6 @@
   padding-left: 40px;
   padding-right: 40px;
 
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -164,22 +158,16 @@
   height: auto;
   padding-left: 40px;
   padding-right: 40px;
-
-  font-family: DM Sans;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  // transform: scaleY(0);
-  // transform-origin: top;
-  // transition: transform 2050ms linear;
 }
 
 .products__checkbox:checked ~ .products__more-description {
   display: block;
-  // transform: scaleY(1);
 }
 
 .products__label {
