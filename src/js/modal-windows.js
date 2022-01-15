@@ -16,8 +16,8 @@
   };
 
   const handleModal = modal => {
-    modals.classList.backdrop.classList.toggle('is-hidden');
-    modal.classList.toggle('expanded');
+    modals.backdrop.classList.toggle('is-hidden');
+    modal.classList.toggle('is-open');
   };
 
   togglers.openAddress.addEventListener('click', () => handleModal(modals.address));
