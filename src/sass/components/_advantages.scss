@@ -10,6 +10,8 @@
     padding-left: 115px;
   }
 }
+.advantages {
+}
 
 .advant__item {
   @media screen and (max-width: 767px) {
@@ -18,10 +20,26 @@
 }
 
 .advant__title {
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
   color: var(--h-text-color);
   font-family: Titan One;
   font-size: 36px;
   font-weight: 400;
   line-height: 1, 13;
   letter-spacing: 0.04em;
+}
+
+.advant__text {
+  @media screen and (max-width: 767px) {
+    width: 230px;
+  }
+
+  color: #000000;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1, 66;
 }
