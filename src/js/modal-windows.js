@@ -1,5 +1,6 @@
 (() => {
   const modals = {
+    backdrop: document.querySelector('.backdrop'),
     address: document.querySelector('[data-modal="modal-address"]'),
     form: document.querySelector('[data-modal="modal-form"]'),
     article: document.querySelector('[data-modal="modal-article"]'),
@@ -14,7 +15,10 @@
     closeArticle: document.querySelector('[data-action="modal-close-article"'),
   };
 
-  const handleModal = modal => modal.classList.toggle('expanded');
+  const handleModal = modal => {
+    modals.classList.backdrop.classList.toggle('is-hidden');
+    modal.classList.toggle('expanded');
+  };
 
   togglers.openAddress.addEventListener('click', () => handleModal(modals.address));
   togglers.closeAddress.addEventListener('click', () => handleModal(modals.address));
