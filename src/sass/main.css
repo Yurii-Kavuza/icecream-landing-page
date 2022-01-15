@@ -100,9 +100,17 @@ ul {
 
 .reviews__section {
   position: relative;
-  height: 865 px;
+  height: 865px;
   padding-top: 155px;
   padding-bottom: 170px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__section {
+    height: 966px;
+    padding-top: 381px;
+    padding-bottom: 234px;
+  }
 }
 
 .reviews__foto {
@@ -123,6 +131,17 @@ ul {
   background: #fafafa;
 }
 
+@media screen and (min-width: 768px) {
+  .reviews__box {
+    width: 620px;
+    height: 164px;
+    padding: 47px 80px 34px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .reviews__box:before {
   content: '';
   position: absolute;
@@ -132,6 +151,13 @@ ul {
   height: 40px;
   z-index: 1;
   background-image: url(../images/reviews/quotes.png);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__box:before {
+    margin-top: -17px;
+    margin-left: -40px;
+  }
 }
 
 .reviews__text {
@@ -144,6 +170,16 @@ ul {
   width: 157px;
   height: 239px;
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__text {
+    width: 460px;
+    height: 83px;
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+  }
 }
 
 .reviews__name {
