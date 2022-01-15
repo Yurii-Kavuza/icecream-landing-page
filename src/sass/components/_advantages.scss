@@ -1,0 +1,27 @@
+.section-advantages {
+  background-color: var(--rose-section-background);
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+  }
+  @media screen and(min-width: 767px) and (max-width: 1199px) {
+    padding-left: 36px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-left: 115px;
+  }
+}
+
+.advant__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
+}
+
+.advant__title {
+  color: var(--h-text-color);
+  font-family: Titan One;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1, 13;
+  letter-spacing: 0.04em;
+}
