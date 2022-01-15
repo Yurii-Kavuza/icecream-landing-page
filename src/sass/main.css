@@ -3,27 +3,28 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 310px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 730px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1080px;
   }
 }
 
@@ -53,25 +54,6 @@ ul {
   list-style: none;
 }
 
-.title {
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--h-text-color);
-}
-
-.pre-title {
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--p-text-color);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -95,5 +77,84 @@ ul {
   --h-text-color: #d41443;
   --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 250ms;
+}
+
+.title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--h-text-color);
+}
+
+.pre-title {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--p-text-color);
+}
+
+.about {
+  background-color: var(--rose-section-background);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+}
+
+.about__text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+  padding: 0 35px;
+  margin-bottom: 35px;
+}
+
+.about__pre-title {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--p-text-color);
+  padding-top: 125px;
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--h-text-color);
+  margin-bottom: 26px;
+}
+
+.about__text-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  padding: 0 30px;
+  margin-bottom: 17px;
+}
+
+.about__button {
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  margin-left: 35px;
+  border: transparent;
+  color: #d41443;
+  margin-bottom: 39px;
 }
 /*# sourceMappingURL=main.css.map */

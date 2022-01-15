@@ -1,0 +1,63 @@
+.about {
+  background-color: var(--rose-section-background);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+
+  //   background-image: url('../images/about/milk-bg_mobile@1x.png');
+  //   background-position: right 0 bottom 100px;
+  //   width: 100%;
+}
+
+.about__text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+  padding: 0 35px;
+  margin-bottom: 35px;
+}
+
+.about__pre-title {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--p-text-color);
+  padding-top: 125px;
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--h-text-color);
+  margin-bottom: 26px;
+}
+
+.about__text-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  padding: 0 30px;
+  margin-bottom: 17px;
+}
+
+.about__button {
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  margin-left: 35px;
+  border: transparent;
+  color: #d41443;
+  margin-bottom: 39px;
+}
