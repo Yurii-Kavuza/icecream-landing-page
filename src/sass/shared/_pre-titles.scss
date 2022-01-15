@@ -5,4 +5,10 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--p-text-color);
+
+  &--hero {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+  }
 }
