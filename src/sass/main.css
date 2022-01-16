@@ -161,10 +161,10 @@ ul {
   content: '';
   position: absolute;
   margin-top: -15px;
-  margin-left: 4px;
+  margin-left: 12px;
   width: 54px;
   height: 40px;
-  z-index: 1;
+  z-index: 50;
   background-image: url(../images/reviews/quotes.png);
 }
 
@@ -182,9 +182,36 @@ ul {
   }
 }
 
-.reviews__text {
+.reviews__lines {
   position: absolute;
   z-index: 99;
+  width: 180px;
+  height: 240px;
+  padding-left: 7px;
+  background: repeating-linear-gradient(#e1e1e1 27px, #e1e1e1 28px, #11ffee00 29px, #11ffee00 57px);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__lines {
+    width: 524px;
+    height: 90px;
+    padding-left: 20px;
+    right: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__lines {
+    width: 813px;
+    height: 60px;
+    padding-left: 28px;
+    right: 230px;
+  }
+}
+
+.reviews__text {
+  position: absolute;
+  z-index: 80;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
