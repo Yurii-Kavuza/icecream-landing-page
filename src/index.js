@@ -1,4 +1,3 @@
 import './sass/main.scss';
-
-import './js/modal-windows';
 import './js/mobile-menu';
+import './js/modal-windows';

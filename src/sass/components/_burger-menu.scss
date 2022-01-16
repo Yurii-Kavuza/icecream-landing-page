@@ -1,12 +1,18 @@
 .burger-menu {
-  display: inline-block;
-  width: 250px;
-  height: 502px;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  max-width: 254px;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--modal-background);
+  transition: right $fade-in-animation;
 
-  @media screen and (min-width: 768px) {
-    width: 254px;
-    height: 1020px;
+  &.is-expanded {
+    right: 0;
   }
 }
 
