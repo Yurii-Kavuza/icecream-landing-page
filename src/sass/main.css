@@ -100,8 +100,7 @@ ul {
 
 .about {
   background-color: var(--rose-section-background);
-  max-width: 1600px;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 .about__text {
@@ -112,6 +111,13 @@ ul {
   color: #000000;
   padding: 0 35px;
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__text {
+    padding-left: 0;
+    margin-left: 17px;
+  }
 }
 
 .about__pre-title {
@@ -133,7 +139,12 @@ ul {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--h-text-color);
-  margin-bottom: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__title {
+    margin-bottom: 26px;
+  }
 }
 
 .about__text-description {
@@ -147,7 +158,29 @@ ul {
   margin-bottom: 17px;
 }
 
+@media screen and (max-width: 768px) {
+  .about__text-description {
+    background-image: url(../images/about/milk-bg_mobile@1x.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__text-description {
+    margin-left: 17px;
+    padding-left: 0;
+  }
+}
+
 .about__button {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   width: 176px;
   height: 44px;
   border-radius: 22px;
@@ -156,5 +189,44 @@ ul {
   border: transparent;
   color: #d41443;
   margin-bottom: 39px;
+}
+
+.about__icon {
+  width: 8px;
+  height: 12px;
+  margin-left: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__list {
+    width: 340px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__list {
+    width: 463px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
