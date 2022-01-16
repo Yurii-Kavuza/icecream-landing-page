@@ -1,0 +1,261 @@
+.hero {
+  position: relative;
+  z-index: -4;
+  overflow: hidden;
+  background-color: var(--hero-background);
+}
+
+.container--hero {
+  position: relative;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  z-index: -3;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 173px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 171px;
+    padding-bottom: 292px;
+  }
+}
+
+.actions {
+  display: flex;
+}
+
+.actions-item {
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.values {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 94px;
+    right: 34px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 156px;
+    right: 97px;
+  }
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+
+  & + & {
+    margin-top: 13px;
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.value-number {
+  display: flex;
+  padding-left: 7px;
+  justify-content: flex-end;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: calc(32 / 28);
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--h-text-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: calc(53 / 46);
+  }
+
+  &::after {
+    z-index: -1;
+    content: '';
+    display: block;
+    margin-left: -6px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--pre-title-hero);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+      margin-left: -12px;
+    }
+  }
+}
+
+.value-text {
+  font-weight: normal;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  color: var(--pre-title-hero);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+
+  &--first {
+    align-self: center;
+  }
+
+  &--second {
+    align-self: flex-start;
+  }
+}
+
+.smart-description {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 154px;
+    bottom: 59px;
+    display: block;
+    width: 114px;
+    height: 48px;
+
+    font-size: 8px;
+    line-height: calc(12 / 8);
+    color: var(--btn-2-bg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 295px;
+    bottom: 102px;
+    display: block;
+    width: 200px;
+    height: 78px;
+
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+}
+
+.expand {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 154px;
+    bottom: 34px;
+    display: block;
+    width: 18px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 295px;
+    bottom: 56px;
+    display: block;
+    width: 26px;
+    height: auto;
+  }
+}
+
+.circle-bg {
+  position: absolute;
+  top: 83px;
+  right: -62px;
+  z-index: -2;
+  width: 346px;
+  height: 344px;
+  background-color: var(--p-text-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    top: 31px;
+    right: 137px;
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 52px;
+    right: 267px;
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero-picture {
+  position: absolute;
+  z-index: -2;
+  display: block;
+  height: auto;
+}
+
+.hero-picture--ice-cream {
+  bottom: 0;
+  right: 32px;
+  width: 171px;
+
+  @media screen and (min-width: 768px) {
+    right: 247px;
+    width: 143px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 450px;
+    width: 236px;
+  }
+}
+
+.hero-picture--girl {
+  display: none;
+  bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    right: 34px;
+    width: 168px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 109px;
+    width: 293px;
+  }
+}
+
+.hero-picture--milk {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    left: 34px;
+    bottom: 28px;
+    width: 124px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 77px;
+    bottom: 45px;
+    width: 188px;
+  }
+}

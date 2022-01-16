@@ -11,7 +11,7 @@
 @import './utils/variables';
 
 @import './shared/buttons';
-@import './shared/modal';
+
 @import './shared/titles';
 @import './shared/pre-titles';
 
@@ -21,6 +21,9 @@
 @import './components/customer-reviews';
 @import './components/footer';
 @import './components/gallery';
-@import './components/hero-header';
+
+@import './components/header';
 @import './components/hero';
 @import './components/products';
+@import './components/burger-menu';
+@import './shared/modal';
