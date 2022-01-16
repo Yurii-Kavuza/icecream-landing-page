@@ -16,8 +16,11 @@
   --btn-3-color: #ffffff;
   --btn-3-bg-hover: #c7133e;
 
-  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-duration: 250ms;
-}
+  --products-text-color: #ffffff;
+  --products-first-background: #ffb8ca;
+  --products-second-background: #f0d1a5;
+  --products-third-background: #c2e297;
+  --products-icon-color: #d41443;
 
-$fade-in-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fade-in-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
