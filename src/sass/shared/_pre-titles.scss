@@ -6,6 +6,14 @@
   text-transform: uppercase;
   color: var(--p-text-color);
 
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
   &--hero {
     display: block;
     text-align: left;

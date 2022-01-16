@@ -1,11 +1,21 @@
 .title {
   font-family: Titan One;
+  font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--h-text-color);
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
 
   &--hero {
     margin-bottom: 19px;
@@ -22,5 +32,6 @@
       font-size: 58px;
       line-height: calc(52 / 58);
     }
+
   }
 }
