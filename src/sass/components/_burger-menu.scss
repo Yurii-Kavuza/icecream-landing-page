@@ -9,7 +9,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--modal-background);
-  transition: right $fade-in-animation;
+  transition: right var(--fade-in-animation);
 
   &.is-expanded {
     right: 0;
