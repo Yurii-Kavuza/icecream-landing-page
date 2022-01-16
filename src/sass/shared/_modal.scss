@@ -6,7 +6,7 @@
   height: 100vh;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.3);
-  transition: opacity $fade-in-animation, visibility $fade-in-animation;
+  transition: opacity var(--fade-in-animation), visibility var(--fade-in-animation);
 }
 
 .backdrop.is-hidden {
