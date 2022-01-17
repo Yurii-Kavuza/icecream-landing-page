@@ -58,13 +58,13 @@
   width: 176px;
   height: 44px;
   border-radius: 22px;
-  background-color: var(--btn-2-bg);
+  background-color: $btn-2-bg;
 
   border: transparent;
-  color: var(--btn-2-color);
+  color: $btn-2-color;
   &:hover,
   &:focus {
-    background: var(--btn-2-bg-hover);
+    background: $btn-2-bg-hover;
   }
-  transition: --fade-in-animation;
+  transition: $fade-in-animation;
 }
