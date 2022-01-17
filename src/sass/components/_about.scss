@@ -1,6 +1,7 @@
 .about {
   background-color: var(--rose-section-background);
   position: relative;
+
   @media screen and (max-width: 768px) {
     background-size: 100%;
     background-position: left bottom 90px;
@@ -27,11 +28,10 @@
 }
 
 .about__text {
-  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 19px;
-  color: #000000;
+  color: var(--primary-text-color);
 
   margin-bottom: 35px;
   @media screen and (min-width: 768px) {
@@ -45,13 +45,7 @@
   }
 }
 
-.about__pre-title {
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--p-text-color);
+.pre-title {
   padding-top: 125px;
   margin-bottom: 15px;
 
@@ -71,14 +65,7 @@
   }
 }
 
-.about__title {
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--h-text-color);
+.title {
   margin-bottom: 26px;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
@@ -95,12 +82,10 @@
 }
 
 .about__text-description {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
-  color: #907e82;
+  color: var(--about-text-description);
 
   margin-bottom: 17px;
 
@@ -117,29 +102,15 @@
   }
 }
 
-.about__button {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-
-  align-items: center;
-  text-align: center;
-
-  width: 176px;
-  height: 44px;
-  border-radius: 22px;
-  background-color: #ffffff;
-
-  border: transparent;
-  color: #d41443;
-
+.btn-5 {
   margin-bottom: 39px;
   @media screen and (max-width: 768px) {
     margin-left: 30px;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 66px;
+    font-size: 16px;
+    line-height: 21px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 146px;
@@ -151,9 +122,10 @@
   height: 12px;
   margin-left: 14px;
   align-items: center;
+  text-align: center;
 }
 
-.about-container {
+.about__container {
   @media screen and (min-width: 768px) {
     display: flex;
 
@@ -180,9 +152,9 @@
 }
 .about__box {
   @media screen and (min-width: 768px) {
-    margin-left: 10px;
+    margin-left: 17px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 60px;
+    margin-left: 74px;
   }
 }
