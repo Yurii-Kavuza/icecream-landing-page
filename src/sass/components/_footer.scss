@@ -1,5 +1,19 @@
 .footer {
+  position: relative;
+
   background-color: #fff5f6;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 56px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 79px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 82px;
+  }
 }
 
 .footer__box {
@@ -163,8 +177,6 @@
 }
 
 .footer__register-trade-box {
-  border-top: 1px solid #e1e1e1;
-
   @media screen and (max-width: 767px) {
     padding: 22px 0 35px 0;
   }
@@ -175,6 +187,28 @@
 
   @media screen and (min-width: 1280px) {
     padding: 9px 0 10px 0;
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+
+    content: '';
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+
+    @media screen and (max-width: 767px) {
+      bottom: 99px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      bottom: 73px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 45px;
+    }
   }
 }
 
