@@ -1,4 +1,13 @@
 .section-gallery {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 52%, rgba(255, 245, 246, 1) 52%);
+  @media screen and (min-width: 480px) {
+    // min-width: 480px;
+  }
+}
+.gallery__photo {
+  margin: 0 auto;
+}
+
+.photo__item {
+  display: block;
+  right: 0;
 }
