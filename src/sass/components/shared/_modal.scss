@@ -17,14 +17,16 @@
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: -100vw;
+  right: -100vw;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  transition: right $fade-in-animation;
 
   &.is-open {
     right: 0;
