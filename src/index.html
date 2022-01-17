@@ -20,28 +20,30 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!-- <div class="backdrop is-hidden"></div> -->
     <div class="backdrop is-hidden"></div>
+
     <include src="./partials/burger-menu.html"></include>
+    <include src="./partials/modals/buy-form.html"></include>
+    <include src="./partials/modals/address.html"></include>
+    <include src="./partials/modals/franchise.html"></include>
+
+    <!-- На удаление -->
     <button data-action="button-open-menu">open burger</button>
-    <!-- <button data-action="modal-open-address">Open</button>
+    <!--  -->
 
-    <include src="./partials/modals/form.html"></include>
-    <include src="./partials/modals/address.html"></include> -->
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
 
-    <include src="./partials/hero-header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
-    <include src="./partials/modal.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>

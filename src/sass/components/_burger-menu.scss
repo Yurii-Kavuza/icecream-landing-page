@@ -8,8 +8,8 @@
   max-width: 254px;
   width: 100vw;
   height: 100vh;
-  background-color: var(--modal-background);
-  transition: right var(--fade-in-animation);
+  background-color: $modal-background;
+  transition: right $fade-in-animation;
 
   &.is-expanded {
     right: 0;
@@ -46,14 +46,14 @@
   width: 209px;
   height: 44px;
 
-  background-color: var(--buttons-white-bg);
+  background-color: $buttons-white-bg;
   border-radius: 22px;
   border: none;
   cursor: pointer;
-  transition: background-color var(--transition-duration) var(--animation-timing);
+  transition: background-color $fade-in-animation;
 
   &:hover {
-    background-color: var(--buttons-grey-bg);
+    background-color: $buttons-grey-bg;
   }
 
   @media screen and (min-width: 768px) {
@@ -66,7 +66,7 @@
   font-size: 16px;
   line-height: 1.3;
 
-  color: var(--h-text-color);
+  color: $h-text-color;
 }
 
 .button-order__icon {
@@ -85,10 +85,10 @@
   font-size: 14px;
   line-height: 1.28;
   color: #ffffff;
-  transition: color var(--transition-duration) var(--animation-timing);
+  transition: color $fade-in-animation;
 
   &:hover {
-    color: var(--h-text-color);
+    color: $h-text-color;
   }
 }
 
