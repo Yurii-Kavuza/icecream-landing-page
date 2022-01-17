@@ -28,6 +28,8 @@
 }
 
 .hero__title {
+  position: relative;
+  z-index: 6;
   margin-bottom: 19px;
   text-align: left;
   font-size: 48px;
@@ -65,6 +67,8 @@
 }
 
 .actions {
+  position: relative;
+  z-index: 6;
   display: flex;
 }
 
@@ -125,7 +129,7 @@
   }
 
   &::after {
-    z-index: 3;
+    z-index: -1;
     content: '';
     display: block;
     margin-left: -6px;
