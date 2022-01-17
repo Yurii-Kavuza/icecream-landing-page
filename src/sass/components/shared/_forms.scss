@@ -11,6 +11,7 @@
     border-radius: 20px;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
+    resize: none;
 
     &::placeholder {
       color: $modal-form-input-elements;
