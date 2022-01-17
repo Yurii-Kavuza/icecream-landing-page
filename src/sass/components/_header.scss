@@ -1,1 +1,77 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: tomato;
+}
 
+.header-menu__nav {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  display: flex;
+}
+
+.header-menu__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-menu__link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+
+  transition: color $fade-in-animation;
+
+  color: $products-text-color;
+  &:hover,
+  &:focus {
+    color: $h-text-color;
+  }
+}
+
+.current {
+  color: $h-text-color;
+}
+
+.mobile-menu {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.buy-now-button {
+  display: flex;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+
+  width: 160px;
+  height: 44px;
+  padding-left: 37px;
+  border-radius: 22px;
+  border: transparent;
+  color: $btn-2-color;
+  background: $btn-2-bg;
+
+  transition: background $fade-in-animation;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background: $btn-2-bg-hover;
+  }
+}
+
+.buy-now-button__vector {
+  margin-left: 12px;
+}
