@@ -19,19 +19,19 @@
 }
 
 .btn-2 {
-  color: var(--btn-2-color);
-  background: var(--btn-2-bg);
+  color: $btn-2-color;
+  background: $btn-2-bg;
   border-radius: 20px;
 
   &:hover,
   &:focus {
-    background: var(--btn-2-bg-hover);
+    background: $btn-2-bg-hover;
   }
 }
 
 .btn-3 {
-  color: var(--btn-3-color);
-  background: var(--btn-3-bg);
+  color: $btn-3-color;
+  background: $btn-3-bg;
   border-radius: 20px;
 
   @media screen and (min-width: 1280px) {
@@ -41,6 +41,6 @@
 
   &:hover,
   &:focus {
-    background: var(--btn-3-bg-hover);
+    background: $btn-3-bg-hover;
   }
 }

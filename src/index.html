@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Icecream</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,21 +20,18 @@
     />
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-
-    <!-- На удаление????? -->
     <div class="backdrop is-hidden"></div>
-    <!--  -->
 
     <include src="./partials/burger-menu.html"></include>
-    <include src="./partials/modals/form.html"></include>
-    <include src="./partials/modals/modal-form.html"></include>
+    <include src="./partials/modals/buy-form.html"></include>
     <include src="./partials/modals/address.html"></include>
+    <include src="./partials/modals/franchise.html"></include>
 
     <!-- На удаление -->
     <button data-action="button-open-menu">open burger</button>
     <!--  -->
 
+    <include src="./partials/header.html"></include>
     <main>
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
