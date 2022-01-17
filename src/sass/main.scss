@@ -10,20 +10,19 @@
 @import './utils/hidden';
 @import './utils/variables';
 
-@import './shared/buttons';
-
-@import './shared/titles';
-@import './shared/pre-titles';
-
-@import './components/about';
-@import './components/advantages';
-@import './components/contacts';
-@import './components/customer-reviews';
-@import './components/footer';
-@import './components/gallery';
+@import './components/shared/buttons';
+@import './components/shared/modal-form';
+@import './components/shared/modal';
+@import './components/shared/pre-title';
+@import './components/shared/title';
 
 @import './components/header';
+@import './components/burger-menu';
 @import './components/hero';
 @import './components/products';
-@import './components/burger-menu';
-@import './shared/modal';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
