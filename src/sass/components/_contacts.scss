@@ -1,6 +1,6 @@
  
 .contacts {
-    background-color: #FFF5F6;
+    background-color: $contacts-bgc;
     
   padding-bottom: 57px;
     
@@ -45,7 +45,7 @@ margin-bottom: 54px;
 
     font-size: 12px;
     line-height: 1.86;
-    background-color: #FFFFFF;
+    background-color: $contacts-white-bgc;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   &:first-child {
@@ -82,23 +82,6 @@ margin-bottom: 54px;
   }
   }
 
-//   .contacts__title-truck{
-// align-items: center;
-// text-align: center;
-
-
-//     width: 130px;
-//     height: 16px;
-//     background: #C2E297;
-//     color: #FFFFFF;
-
-
-// letter-spacing: 0.04em;
-// font-weight: 500;
-//     border-radius: 4px;
-// margin-bottom: 25px;
-
-// }
 
 .contacts__title{
    display: inline-block;
@@ -106,8 +89,8 @@ margin-bottom: 54px;
     font-size: 12px;
     line-height: 1;
     padding: 2px 24px;    
-    background: #F0D1A5;
-    color: #FFFFFF;
+    background: $contacts-title-color;
+    color: $contacts-white-bgc;
 
 font-weight: 500;
 
@@ -130,40 +113,31 @@ margin-bottom: 32px;
 
 
 &--truck{
-    background: #C2E297;
-    color: #FFFFFF;
+    background: $contacts-second-title;
+    color: $contacts-white-bgc;
 }
 }
 
 .contacts__part-name{
 line-height: 1.86;
 letter-spacing: 0.04em;
-
-color: #000000;
-@media screen and (min-width: 768px) {
-  
-   
-  }
-
-  @media screen and (min-width: 1280px) {
-
- 
-}
 }
 
 .products__part-description {
 
 line-height: 1.5;
-color: #907E82;
+color: $contacts-product-descr;
 margin-bottom: 25px;
 
 @media screen and (min-width: 768px) {
   margin-bottom: 30px;
+  line-height: 1.64;
    
   }
 
   @media screen and (min-width: 1280px) {
 margin-bottom: 32px; 
+line-height: 1.8;
 }
 
 }
@@ -175,23 +149,28 @@ margin-bottom: 32px;
 .contacts__part-time{
 
 line-height: 1.8;
-color: #FFA5BA;
+color: $contact-color-time;
+}
+
+.contacts__adress {
+
+
+&--social{
+    color: $contacts-product-descr;
+}
+@media screen and (min-width: 768px) {
+  
+  line-height: 1.85;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+ 
+line-height: 1.81 ;
+}
 }
 
 
-
-
-.contacts__adress-tel {
-
-
-color: #907E82;
-}
-
-.contacts__adress-mail {
-
-color: #907E82;
-
-}
 
 .contacts-border {
     padding-top: 25px;
