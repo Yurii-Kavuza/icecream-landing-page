@@ -32,7 +32,7 @@
 .footer__first-title {
   margin-bottom: 17px;
 
-  color: var(--p-text-color);
+  color: $p-text-color;
   font-family: Titan One;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -59,7 +59,7 @@
 }
 
 .footer__second-title {
-  color: var(--h-text-color);
+  color: $h-text-color;
   font-family: Titan One;
   text-transform: uppercase;
 
@@ -127,7 +127,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--h-text-color);
+    fill: $h-text-color;
   }
 }
 
@@ -159,7 +159,7 @@
 }
 
 .footer__phone--link-color {
-  color: var(--h-text-color);
+  color: $h-text-color;
 }
 
 .footer__register-trade-box {

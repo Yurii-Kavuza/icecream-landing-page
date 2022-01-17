@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--rose-section-background);
+  background-color: $rose-section-background;
   position: relative;
 
   @media screen and (max-width: 768px) {
@@ -10,7 +10,7 @@
     background-image: url(../images/about/milk-bg_mobile@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about/milk-bg_mobile@2x.png);
+      background-image: url(../images/about/milk-bg_mobile@2x.png)
     }
   }
 
@@ -46,6 +46,15 @@
 }
 
 .about__pre-title {
+<<<<<<< HEAD
+=======
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $p-text-color;
+>>>>>>> dev
   padding-top: 125px;
   margin-bottom: 15px;
 
@@ -66,6 +75,16 @@
 }
 
 .about__title {
+<<<<<<< HEAD
+=======
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $h-text-color;
+>>>>>>> dev
   margin-bottom: 26px;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;

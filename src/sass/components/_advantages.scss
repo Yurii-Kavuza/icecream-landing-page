@@ -1,6 +1,18 @@
 .section-advantages {
-  background-color: var(--rose-section-background);
+
+  background-color: $rose-section-background;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 97px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 139px;
+  }
+
 }
+
 .advantages {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -74,7 +86,7 @@
 }
 
 .advant__text {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 12px;

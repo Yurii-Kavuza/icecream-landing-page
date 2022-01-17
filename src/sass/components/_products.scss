@@ -71,7 +71,7 @@
   }
 
   &:nth-child(1) {
-    background-color: var(--products-first-background);
+    background-color: $products-first-background;
 
     &:before {
       background-image: url(../images/products/products_1_mobile@1x.png);
@@ -98,7 +98,7 @@
   }
 
   &:nth-child(2) {
-    background-color: var(--products-second-background);
+    background-color: $products-second-background;
 
     &:before {
       background-image: url(../images/products/products_2_mobile@1x.png);
@@ -125,7 +125,7 @@
   }
 
   &:nth-child(3) {
-    background-color: var(--products-third-background);
+    background-color: $products-third-background;
 
     &:before {
       background-image: url(../images/products/products_3_mobile@1x.png);
@@ -188,7 +188,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--products-text-color);
+  color: $products-text-color;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 70px;
@@ -226,7 +226,7 @@
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--products-text-color);
+  color: $products-text-color;
 
   @media screen and (min-width: 768px) {
     padding-left: 11px;
@@ -252,7 +252,7 @@
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--products-text-color);
+  color: $products-text-color;
   @media screen and (min-width: 768px) {
     padding-left: 11px;
     padding-right: 11px;
@@ -278,13 +278,13 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--products-text-color);
+  background-color: $products-text-color;
   border: none;
   margin: 0 auto;
   margin-top: 30px;
   padding: 0;
   cursor: pointer;
-  transition: box-shadow 250ms linear;
+  transition: box-shadow $fade-in-animation;
 
   &:hover {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
@@ -299,5 +299,5 @@
   }
 }
 .products__icon {
-  fill: var(--products-icon-color);
+  fill: $products-icon-color;
 }

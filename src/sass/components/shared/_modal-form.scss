@@ -1,8 +1,8 @@
-.modal {
-  padding: 50px 0;
+// .modal {
+//   padding: 50px 0;
 
-  background: var(--modal-form-backdrop);
-}
+//   background: $modal-form-backdrop;
+// }
 
 .modal__form {
   position: relative;
@@ -10,7 +10,7 @@
   max-width: 400px;
   margin: 0 auto;
 
-  background: var(--modal-form-bg);
+  background: $modal-form-bg;
   border-radius: 30px;
 }
 
@@ -21,7 +21,7 @@
   width: 50px;
   height: 20px;
 
-  background: var(--modal-form-backdrop);
+  background: $modal-form-backdrop;
   border-radius: 20px;
 }
 
@@ -45,7 +45,7 @@
   width: 50px;
   height: 20px;
 
-  background: var(--modal-form-bg);
+  background: $modal-form-bg;
   border-radius: 30px;
 }
 
@@ -72,7 +72,7 @@
   width: 20px;
   height: 20px;
 
-  background: var(--modal-form-bg);
+  background: $modal-form-bg;
   border-radius: 50%;
 }
 
@@ -88,7 +88,7 @@
   margin-bottom: 10px;
   line-height: 40px;
 
-  background: var(--modal-form-input-bg);
+  background: $modal-form-input-bg;
 
   border: none;
   border-radius: 20px;
@@ -97,13 +97,13 @@
   font-family: 'DM Sans', sans-serif;
 
   &::placeholder {
-    color: var(--modal-form-input-elements);
+    color: $modal-form-input-elements;
   }
 
   &:focus {
     outline: none;
-    border: 1px var(--modal-form-input-elements);
-    box-shadow: 0 0 5px var(--modal-form-input-elements);
+    border: 1px $modal-form-input-elements;
+    box-shadow: 0 0 5px $modal-form-input-elements;
   }
 }
 
@@ -120,7 +120,7 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--h-text-color);
+  color: $h-text-color;
 }
 
 .button-submit {
@@ -135,9 +135,9 @@
   border: none;
   cursor: pointer;
 
-  background-color: var(--btn-3-bg);
+  background-color: $btn-3-bg;
 
-  color: var(--products-text-color);
+  color: $products-text-color;
   font-family: 'Titan One', sans-serif;
 }
 
