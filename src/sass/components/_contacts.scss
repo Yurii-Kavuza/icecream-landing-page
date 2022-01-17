@@ -1,69 +1,111 @@
  
 .contacts {
     background-color: #FFF5F6;
-
-  padding-top: 121px;
-  padding-bottom: 98px;
+    
+  padding-bottom: 57px;
     
 
  @media screen and (min-width: 768px) {
-    padding-top: 122px;
-    padding-bottom: 112px;
+    
+    padding-bottom: 79px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 127px;
-    padding-bottom: 119px;
+
+    padding-bottom: 83px;
   }
 }
 
 .contacts__list {
-    flex-direction: column;
+display: flex;
+flex-direction: column;
+margin-bottom: 54px;
+
+@media screen and (min-width: 768px) {
+    flex-direction:row;
+    margin-bottom: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+
+   margin-bottom: 86px;
+  }
+
 }
  
 
 
 .contacts__item {
-    padding: 43px 20px;
-
+    padding: 43px 20px;    
     max-width: 220px;
-    height: 427px;
+    // height: 427px;
     border-radius: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 
     font-size: 12px;
-  background-color: #FFFFFF;
+    line-height: 1.86;
+    background-color: #FFFFFF;
 
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  &:first-child {
+      margin-top:-84px;
+  }
+  &:last-child {
+      margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+      &:first-child {
+        margin-top: -78px;
+    }
 
+    padding: 50px 31px;
+    margin-top:-78px;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    
   }
 
-  .contacts__title-truck{
-align-items: center;
-text-align: center;
+  @media screen and (min-width: 1280px) {
+
+    &:first-child {
+        margin-top: -102px;
+    }
+    padding:52px 43px 62px;
+    margin-top:-102px;
+    margin-bottom: 0;
+    max-width: 330px;
+    font-size: 16px;
+    
+  }
+  }
+
+//   .contacts__title-truck{
+// align-items: center;
+// text-align: center;
 
 
-    width: 130px;
-    height: 16px;
-    background: #C2E297;
-    color: #FFFFFF;
+//     width: 130px;
+//     height: 16px;
+//     background: #C2E297;
+//     color: #FFFFFF;
 
 
-letter-spacing: 0.04em;
-font-weight: 500;
-    border-radius: 4px;
-margin-bottom: 25px;
+// letter-spacing: 0.04em;
+// font-weight: 500;
+//     border-radius: 4px;
+// margin-bottom: 25px;
 
-}
+// }
 
 .contacts__title{
-   display: flex;
-align-items: center;
-text-align: center;
-
-    padding: 0 20px;
-    width: 80px;
-    height: 16px;
+   display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    padding: 2px 24px;    
     background: #F0D1A5;
     color: #FFFFFF;
 
@@ -73,35 +115,57 @@ letter-spacing: 0.04em;
 
     border-radius: 4px;
 margin-bottom: 25px;
+
+@media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+    font-size: 16px;
+border-radius: 6px;
+  }
+
+  @media screen and (min-width: 1280px) {
+margin-bottom: 32px;
+    padding: 6px 16px;
+
+  }
+
+
+&--truck{
+    background: #C2E297;
+    color: #FFFFFF;
+}
 }
 
 .contacts__part-name{
-line-height: 1,8;
+line-height: 1.86;
 letter-spacing: 0.04em;
 
 color: #000000;
+@media screen and (min-width: 768px) {
+  
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+
+ 
+}
 }
 
 .products__part-description {
 
-font-weight: 500;
-line-height: 1.83;
-
+line-height: 1.5;
 color: #907E82;
-
 margin-bottom: 25px;
-//   @media screen and (min-width: 768px) {
-//     padding-left: 11px;
-//     padding-right: 11px;
-//     line-height: 1.76;
-//   }
 
-//   @media screen and (min-width: 1280px) {
-//     padding-left: 44px;
-//     padding-right: 44px;
-//     font-size: 16px;
-//     line-height: 1.76;
-//   }
+@media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+margin-bottom: 32px; 
+}
+
 }
 
 .contacts-card {
@@ -110,7 +174,6 @@ margin-bottom: 25px;
 
 .contacts__part-time{
 
-font-weight: 500;
 line-height: 1.8;
 color: #FFA5BA;
 }
@@ -119,13 +182,12 @@ color: #FFA5BA;
 
 
 .contacts__adress-tel {
-font-weight: 500;
+
 
 color: #907E82;
 }
 
 .contacts__adress-mail {
-    font-weight: 500;
 
 color: #907E82;
 
@@ -138,4 +200,13 @@ color: #907E82;
 
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+margin-bottom: 32px;
+}
 }
