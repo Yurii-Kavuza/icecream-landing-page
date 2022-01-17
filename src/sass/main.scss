@@ -1,25 +1,21 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
 @import './base/common';
 @import './base/reset';
 
-@import './components/about';
-@import './components/advantages';
-@import './components/contacts';
-@import './components/customer-reviews';
-@import './components/footer';
-@import './components/gallery';
-@import './components/hero-header';
-@import './components/products';
-
-@import './shared/buttons';
-@import './shared/modal';
-@import './shared/titles';
-@import './shared/pre-titles';
-
 @import './utils/hidden';
 @import './utils/variables';
+
+@import './components/shared/buttons';
+@import './components/shared/modal';
+@import './components/shared/titles';
+@import './components/shared/forms';
+
+@import './components/header';
+@import './components/burger-menu';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
