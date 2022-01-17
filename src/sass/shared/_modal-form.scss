@@ -1,0 +1,156 @@
+.modal {
+  padding: 50px 0;
+
+  background: #ffb8ca;
+}
+
+.modal__form {
+  position: relative;
+
+  max-width: 400px;
+  margin: 0 auto;
+
+  background: white;
+  border-radius: 30px;
+}
+
+.modal-left-decoration,
+.modal-right-decoration {
+  position: absolute;
+
+  width: 50px;
+  height: 20px;
+
+  background: #ffb8ca;
+  border-radius: 20px;
+}
+
+.modal-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+
+.modal-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+
+.modal-left-decoration:before,
+.modal-left-decoration:after,
+.modal-right-decoration:before,
+.modal-right-decoration:after {
+  content: '';
+  position: absolute;
+
+  width: 50px;
+  height: 20px;
+
+  background: white;
+  border-radius: 30px;
+}
+
+.modal-left-decoration:before {
+  top: -20px;
+}
+
+.modal-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+
+.modal-right-decoration:after,
+.modal-left-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+
+.modal-circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+
+  width: 20px;
+  height: 20px;
+
+  background: white;
+  border-radius: 50%;
+}
+
+.modal__wrap {
+  padding: 50px;
+}
+
+.modal-menu__input,
+.modal-menu__textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  line-height: 40px;
+
+  background: #e9eff6;
+
+  border: none;
+  border-radius: 20px;
+
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+
+  &::placeholder {
+    color: #e17992;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px #e17992;
+    box-shadow: 0 0 5px #e17992;
+  }
+}
+
+.modal-menu__textarea {
+  resize: none;
+}
+
+.modal__title {
+  margin-bottom: 40px;
+
+  font-family: Titan One, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #d41443;
+}
+
+.button-submit {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 209px;
+  height: 44px;
+
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  background-color: #d41443;
+
+  color: white;
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .modal-left-decoration,
+  .modal-right-decoration,
+  .modal-circle {
+    display: none;
+  }
+
+  .modal__wrap {
+    padding: 50px 30px;
+  }
+}
