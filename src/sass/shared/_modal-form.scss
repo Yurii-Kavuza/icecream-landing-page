@@ -1,7 +1,7 @@
 .modal {
   padding: 50px 0;
 
-  background: #ffb8ca;
+  background: var(--modal-form-backdrop);
 }
 
 .modal__form {
@@ -10,7 +10,7 @@
   max-width: 400px;
   margin: 0 auto;
 
-  background: white;
+  background: var(--modal-form-bg);
   border-radius: 30px;
 }
 
@@ -21,7 +21,7 @@
   width: 50px;
   height: 20px;
 
-  background: #ffb8ca;
+  background: var(--modal-form-backdrop);
   border-radius: 20px;
 }
 
@@ -45,7 +45,7 @@
   width: 50px;
   height: 20px;
 
-  background: white;
+  background: var(--modal-form-bg);
   border-radius: 30px;
 }
 
@@ -72,7 +72,7 @@
   width: 20px;
   height: 20px;
 
-  background: white;
+  background: var(--modal-form-bg);
   border-radius: 50%;
 }
 
@@ -88,7 +88,7 @@
   margin-bottom: 10px;
   line-height: 40px;
 
-  background: #e9eff6;
+  background: var(--modal-form-input-bg);
 
   border: none;
   border-radius: 20px;
@@ -97,13 +97,13 @@
   font-family: 'DM Sans', sans-serif;
 
   &::placeholder {
-    color: #e17992;
+    color: var(--modal-form-input-elements);
   }
 
   &:focus {
     outline: none;
-    border: 1px #e17992;
-    box-shadow: 0 0 5px #e17992;
+    border: 1px var(--modal-form-input-elements);
+    box-shadow: 0 0 5px var(--modal-form-input-elements);
   }
 }
 
@@ -114,14 +114,13 @@
 .modal__title {
   margin-bottom: 40px;
 
-  font-family: Titan One, sans-serif;
-  font-weight: normal;
+  font-family: 'Titan One', sans-serif;
   font-size: 24px;
 
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #d41443;
+  color: var(--h-text-color);
 }
 
 .button-submit {
@@ -136,11 +135,10 @@
   border: none;
   cursor: pointer;
 
-  background-color: #d41443;
+  background-color: var(--btn-3-bg);
 
-  color: white;
-  font-family: Titan One, sans-serif;
-  font-weight: 400;
+  color: var(--products-text-color);
+  font-family: 'Titan One', sans-serif;
 }
 
 @media (max-width: 480px) {
