@@ -1,12 +1,36 @@
+.header {
+  position: relative;
+  z-index: 3;
+  background-color: $hero-background;
+}
+
+.header-container {
+  position: fixed;
+  z-index: 3;
+  padding-top: 6px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 37px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 37px;
+    width: 1280px;
+  }
+}
+
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: tomato;
 }
 
 .header-menu__nav {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
   display: flex;
@@ -40,12 +64,24 @@
 }
 
 .mobile-menu {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: auto;
+    margin-right: 30px;
   }
 }
 
+.mobile-menu-button {
+  background: transparent;
+  border: transparent;
+}
+
 .buy-now-button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
   font-family: DM Sans;
   font-style: normal;
