@@ -1,45 +1,54 @@
 <!-- Секция шапка / Page header -->
-<header class="header">
-    <div class="container header__block">
-        <nav class="header-menu">
-            <div class="header-logo">
-                <picture>
-                    <source srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x" media="(min-width:1200px)"/>
-                    <source srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x" media="(min-width:768px)"/>
-                    <source srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x" media="(min-width:480px)"/>
-                    <img class="card__img" src="./images/header/logo@1x.png" width="200" alt="ice-cream">
-                </picture>
-            </div>
-            <div class="mobile-menu">
-                <button class="mobile-menu-button" data-modal-mobile-menu-open>
-                    <svg width="40" height="40">
-                        <use href="./images/header/symbol-defs.svg#icon-stripes"></use>
-                    </svg>
-                </button>
-            </div>
-            <ul class="header-menu__nav">
-                <li class="header-menu__item">
-                    <a href="" class="header-menu__link current">Home</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="" class="header-menu__link">About us</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="" class="header-menu__link">How it`s made?</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="" class="header-menu__link">Our products</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="" class="header-menu__link">Contact</a>
-                </li>
-            </ul>
-            <button class="buy-now-button" data-modal-mobile-menu-open>
-                Buy now
-                <svg width="4" height="8" class="buy-now-button__vector">
-                    <use href="./images/header/symbol-defs.svg#icon-vector"></use>
-                </svg>
-            </button>
-        </nav>
-    </div>
+<header class="header" id="home">
+  <div class="container header__block">
+    <nav class="header-menu">
+      <div class="header-logo">
+        <picture>
+          <source
+            srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x"
+            media="(min-width:480px)"
+          />
+          <img class="card__img" src="./images/header/logo@1x.png" width="200" alt="ice-cream" />
+        </picture>
+      </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu-button" data-action="button-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/header/symbol-defs.svg#icon-stripes"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="header-menu__nav">
+        <li class="header-menu__item">
+          <a href="#home" class="header-menu__link current">Home</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#advantages" class="header-menu__link">About us</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#about" class="header-menu__link">How it`s made?</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#products" class="header-menu__link">Our products</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="#contacts" class="header-menu__link">Contact</a>
+        </li>
+      </ul>
+      <button class="buy-now-button" data-action="modal-open-form">
+        Buy now
+        <svg width="4" height="8" class="buy-now-button__vector">
+          <use href="./images/header/symbol-defs.svg#icon-vector"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
 </header>
