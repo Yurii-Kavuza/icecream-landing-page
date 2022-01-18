@@ -1,9 +1,21 @@
 <div class="modal" data-modal="modal-franchise">
   <div class="modal__wrapper">
-    <p>Leave your request for the purchase of ice cream</p>
+    <button class="modal__button-close" data-action="modal-close-franchise">
+      <i class="far fa-times-circle"></i>
+    </button>
 
-    <input type="text" placeholder="Phone number" />
+    <div class="modal__decoration modal__decoration_left"></div>
+    <div class="modal__decoration modal__decoration_right"></div>
+    <div class="modal__decoration-circle"></div>
 
-    <button class="modal__button-close" data-action="modal-close-franchise">Close</button>
+    <h3 class="modal__title">Leave your request for opening franchise!</h3>
+    <form class="feedback" data-form="form-franchise">
+      <input class="feedback__input" type="text" placeholder="Name" />
+      <input class="feedback__input" type="tel" placeholder="Phone number" />
+      <input class="feedback__input" type="email" placeholder="Email" />
+      <input class="feedback__input" type="company" placeholder="Company name" />
+
+      <button class="button-submit" type="submit" data-action="submit-form">Call us!</button>
+    </form>
   </div>
 </div>
