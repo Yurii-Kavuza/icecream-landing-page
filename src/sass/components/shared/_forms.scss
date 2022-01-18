@@ -1,0 +1,72 @@
+.feedback {
+  &__input,
+  &__textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    background: $modal-form-input-bg;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    resize: none;
+
+    &::placeholder {
+      color: $modal-form-input-elements;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px $modal-form-input-elements;
+      box-shadow: 0 0 5px $modal-form-input-elements;
+    }
+  }
+}
+
+.modal-menu__textarea {
+  resize: none;
+}
+
+.modal__title {
+  margin-bottom: 40px;
+
+  font-family: 'Titan One', sans-serif;
+  font-size: 24px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $h-text-color;
+}
+
+.button-submit {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 209px;
+  height: 44px;
+
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  background-color: $btn-3-bg;
+
+  color: $products-text-color;
+  font-family: 'Titan One', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .modal-left-decoration,
+  .modal-right-decoration,
+  .modal-circle {
+    display: none;
+  }
+
+  .modal__wrap {
+    padding: 50px 30px;
+  }
+}

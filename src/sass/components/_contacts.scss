@@ -1,0 +1,191 @@
+ 
+.contacts {
+    background-color: $contacts-bgc;
+    
+  padding-bottom: 57px;
+    
+
+ @media screen and (min-width: 768px) {
+    
+    padding-bottom: 79px;
+  }
+  @media screen and (min-width: 1280px) {
+
+    padding-bottom: 83px;
+  }
+}
+
+.contacts__list {
+display: flex;
+flex-direction: column;
+margin-bottom: 54px;
+
+@media screen and (min-width: 768px) {
+    flex-direction:row;
+    margin-bottom: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+
+   margin-bottom: 86px;
+  }
+
+}
+ 
+
+
+.contacts__item {
+    padding: 43px 20px;    
+    max-width: 220px;
+    // height: 427px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 12px;
+    line-height: 1.86;
+    background-color: $contacts-white-bgc;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  &:first-child {
+      margin-top:-84px;
+  }
+  &:last-child {
+      margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+      &:first-child {
+        margin-top: -78px;
+    }
+
+    padding: 50px 31px;
+    margin-top:-78px;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    
+  }
+
+  @media screen and (min-width: 1280px) {
+
+    &:first-child {
+        margin-top: -102px;
+    }
+    padding:52px 43px 62px;
+    margin-top:-102px;
+    margin-bottom: 0;
+    max-width: 330px;
+    font-size: 16px;
+    
+  }
+  }
+
+
+.contacts__title{
+   display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    padding: 2px 24px;    
+    background: $contacts-title-color;
+    color: $contacts-white-bgc;
+
+font-weight: 500;
+
+letter-spacing: 0.04em;
+
+    border-radius: 4px;
+margin-bottom: 25px;
+
+@media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+    font-size: 16px;
+border-radius: 6px;
+  }
+
+  @media screen and (min-width: 1280px) {
+margin-bottom: 32px;
+    padding: 6px 16px;
+
+  }
+
+
+&--truck{
+    background: $contacts-second-title;
+    color: $contacts-white-bgc;
+}
+}
+
+.contacts__part-name{
+line-height: 1.86;
+letter-spacing: 0.04em;
+}
+
+.products__part-description {
+
+line-height: 1.5;
+color: $contacts-product-descr;
+margin-bottom: 25px;
+
+@media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+  line-height: 1.64;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+margin-bottom: 32px; 
+line-height: 1.8;
+}
+
+}
+
+.contacts-card {
+   margin-bottom: 10px;
+}
+
+.contacts__part-time{
+
+line-height: 1.8;
+color: $contact-color-time;
+}
+
+.contacts__adress {
+
+
+&--social{
+    color: $contacts-product-descr;
+}
+@media screen and (min-width: 768px) {
+  
+  line-height: 1.85;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+ 
+line-height: 1.81 ;
+}
+}
+
+
+
+.contacts-border {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+margin-bottom: 32px;
+}
+}
