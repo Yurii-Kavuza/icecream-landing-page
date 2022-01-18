@@ -16,6 +16,11 @@
     font-size: 14px;
     line-height: calc(18 / 14);
   }
+  transition: background-color $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation;
+  -o-transition: background-color $fade-in-animation;
 }
 
 .btn-2 {
@@ -25,13 +30,13 @@
 
   &:hover,
   &:focus {
-    background: $btn-2-bg-hover;
+    background-color: $btn-2-bg-hover;
   }
 }
 
 .btn-3 {
   color: $btn-3-color;
-  background: $btn-3-bg;
+  background-color: $btn-3-bg;
   border-radius: 20px;
 
   @media screen and (min-width: 1280px) {
@@ -41,7 +46,7 @@
 
   &:hover,
   &:focus {
-    background: $btn-3-bg-hover;
+    background-color: $btn-3-bg-hover;
   }
 }
 
@@ -64,7 +69,11 @@
   color: $btn-2-color;
   &:hover,
   &:focus {
-    background: $btn-2-bg-hover;
+    background-color: $btn-2-bg-hover;
   }
-  transition: $fade-in-animation;
+  transition: background-color $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation;
+  -o-transition: background-color $fade-in-animation;
 }
