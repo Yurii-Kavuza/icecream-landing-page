@@ -2,30 +2,28 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 9;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.3);
   transition: opacity $fade-in-animation, visibility $fade-in-animation;
-}
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
   position: fixed;
-  top: 0;
   right: calc(-100vw - 100px);
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   transition: right $fade-in-animation;
 
   &.is-open {
