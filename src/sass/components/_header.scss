@@ -1,27 +1,43 @@
-/*.header {
-  position: relative;
-  z-index: 3;
-  background-color: $hero-background;
-}*/
-
 .header {
-  position: absolute;
-  z-index: 3;
-  top: 6px;
-  left: 20px;
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    z-index: 3;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    position: absolute;
+    z-index: 3;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 480px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    position: absolute;
+    z-index: 3;
     padding-top: 37px;
     width: 740px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
+    position: absolute;
+    z-index: 3;
     padding-top: 37px;
     width: 1200px;
+    padding-left: 0;
   }
 }
 
 .header-menu {
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+  }
   display: flex;
   align-items: center;
   justify-content: space-between;
