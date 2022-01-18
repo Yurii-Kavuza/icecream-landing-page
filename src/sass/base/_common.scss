@@ -22,3 +22,21 @@ body {
     width: 1090px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d41443;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e17992;
+}
