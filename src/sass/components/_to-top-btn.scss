@@ -1,0 +1,27 @@
+.to-top {
+  background: $buttons-white-bg;
+  position: fixed;
+  bottom: 2%;
+  right: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $neutral-section-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+  transition: box-shadow $fade-in-animation;
+  color: $btn-2-color;
+  transform: translateX(50%);
+
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 3%;
+    right: 3%;
+  }
+}
