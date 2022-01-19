@@ -1,4 +1,4 @@
-import { openMenu, closeMenu, burgerLinks, modals, togglers, forms } from './elements';
+import { openMenu, closeMenu, burgerLinks, modals, togglers, forms, map } from './elements';
 import {
   handleOpenModal,
   handleCloseModal,
@@ -8,6 +8,7 @@ import {
   handleFeedbackForm,
   handleFranchiseForm,
 } from './actions';
+import { handeMapChange } from './changeMap';
 
 // open burger
 openMenu.forEach(item => item.addEventListener('click', openBurger));
@@ -25,6 +26,9 @@ togglers.openAddress.forEach(item =>
 togglers.openFranchise.forEach(item =>
   item.addEventListener('click', () => handleOpenModal(modals.franchise)),
 );
+togglers.closeReadMore.forEach(item =>
+  item.addEventListener('click', () => handleOpenModal(modals.readmore)),
+);
 // close forms
 togglers.closeForm.forEach(item =>
   item.addEventListener('click', () => handleCloseModal(modals.form)),
@@ -35,6 +39,14 @@ togglers.closeAddress.forEach(item =>
 togglers.closeFranchise.forEach(item =>
   item.addEventListener('click', () => handleCloseModal(modals.franchise)),
 );
+togglers.closeReadMore.forEach(item =>
+  item.addEventListener('click', () => handleCloseModal(modals.readmore)),
+);
+// handle map
+togglers.changeCity.forEach(item =>
+  item.addEventListener('click', () => handeMapChange(item, togglers.changeCity, map)),
+);
+
 // handle forms submit
 forms.feedback.addEventListener('submit', e => handleFeedbackForm(e, modals.form));
 forms.franchise.addEventListener('submit', e => handleFranchiseForm(e, modals.franchise));

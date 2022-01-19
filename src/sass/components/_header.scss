@@ -1,32 +1,57 @@
 .header {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  background-color: $hero-background;
-}
-
-.header-container {
-  position: fixed;
-  z-index: 3;
+  top: 0;
+  left: 0;
   padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
 
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    z-index: 3;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
     padding-top: 37px;
-    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 37px;
-    width: 1280px;
+    padding-left: 0;
+
   }
 }
 
 .header-menu {
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+  }
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+
+.header-logo {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 290px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 110px;
+  }
+
 }
 
 .header-menu__nav {
@@ -34,6 +59,7 @@
     display: none;
   }
   display: flex;
+  margin-right: 110px;
 }
 
 .header-menu__item {

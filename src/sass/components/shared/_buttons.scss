@@ -11,6 +11,8 @@
   font-size: 8px;
   line-height: calc(10 / 8);
 
+  border: none;
+
   @media screen and (min-width: 1280px) {
     padding: 11px 21px;
     font-size: 14px;
@@ -64,7 +66,7 @@
   height: 44px;
   border-radius: 22px;
   background-color: $btn-2-bg;
-
+  cursor: pointer;
   border: transparent;
   color: $btn-2-color;
   &:hover,
@@ -76,4 +78,52 @@
   -moz-transition: background-color $fade-in-animation;
   -ms-transition: background-color $fade-in-animation;
   -o-transition: background-color $fade-in-animation;
+}
+
+.btn-6 {
+  justify-content: center;
+  border-radius: 22px;
+  border: none;
+
+  width: 161px;
+  height: 44px;
+  background-color: $btn-2-bg;
+  transition: color $fade-in-animation;
+
+  transition: background-color $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation;
+  -o-transition: background-color $fade-in-animation;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $btn-2-bg-hover;
+  }
+
+  &__solid {
+    background-color: $contacts-btn-color;
+
+    &:hover,
+    &:focus {
+      background-color: $contacts-btn-color;
+    }
+  }
+
+  &__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+
+    align-items: center;
+    text-align: center;
+    color: $contacts-btn-color;
+
+    &_light {
+      color: $btn-3-color;
+    }
+  }
 }
