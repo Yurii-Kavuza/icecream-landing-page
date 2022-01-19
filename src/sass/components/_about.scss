@@ -4,7 +4,7 @@
 
   @media screen and (max-width: 768px) {
     background-size: 100%;
-    background-position: left bottom 90px;
+    background-position: left bottom 97px;
     background-repeat: no-repeat;
 
     background-image: url(../images/about/milk-bg_mobile@1x.png);
@@ -151,19 +151,25 @@
 }
 
 .about__item {
-  margin-bottom: 35px;
-  &:last-child {
+  padding: 0 30px;
+  &:first-child {
+    margin-bottom: 35px;
+  }
+  &:nth-child(n + 2) {
     margin-bottom: 17px;
   }
-  @media screen and (min-width: 768px) {
-    padding: 0 30px;
 
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-bottom: 35px;
     &:last-child {
       margin-bottom: 62px;
     }
   }
+
   @media screen and (min-width: 1280px) {
-    &:last-child {
+    margin-bottom: 35px;
+    &:nth-child(n + 2) {
       margin-bottom: 45px;
     }
   }

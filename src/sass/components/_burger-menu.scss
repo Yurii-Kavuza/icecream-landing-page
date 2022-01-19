@@ -10,6 +10,7 @@
   height: 100vh;
   background-color: $modal-background;
   transition: right $fade-in-animation;
+  overflow-y: scroll;
 
   &.is-expanded {
     right: 0;

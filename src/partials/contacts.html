@@ -1,8 +1,8 @@
 <section class="contacts" id="contacts">
-    <div class="container">
-        <h2 class="visually-hidden">contacts</h2>
+  <div class="container">
+    <h2 class="visually-hidden">contacts</h2>
 
-        <ul class="contacts__list">
+    <ul class="contacts__list">
             <li class="contacts__item">
                 <h3 class="contacts__title">CAFE</h3>
                 <p class="contacts__part-name">Chicago</p>
@@ -82,17 +82,26 @@
                     </li>
                 </ul>
             </li>
-
-
-
         </ul>
 
-
-
-    <!-- На удаление -->
-    <button data-action="modal-open-address">open address</button>
-    <button data-action="modal-open-franchise">open franchise</button>
-    <!--  -->
+    <div class="actions__wrapper">
+      <ul class="actions">
+        <li class="actions-item">
+          <button class="button button_solid" data-action="modal-open-address">
+            <span class="button__text button__text_light">
+              Our Locations
+            </span>
+          </button>
+        </li>
+        <li class="actions-item">
+          <button class="button" data-action="modal-open-franchise">
+            <span class="button__text button__text">
+              Franchise
+            </span>
+          </button>
+        </li>
+      </ul>
     </div>
+  </div>
 
 </section>
