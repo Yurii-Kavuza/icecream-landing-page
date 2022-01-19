@@ -19,6 +19,17 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <div class="backdrop is-hidden"></div>
@@ -27,7 +38,6 @@
     <include src="./partials/modals/buy-form.html"></include>
     <include src="./partials/modals/address.html"></include>
     <include src="./partials/modals/franchise.html"></include>
-
 
     <include src="./partials/header.html"></include>
     <main>
@@ -42,6 +52,21 @@
 
     <include src="./partials/footer.html"></include>
 
-    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="index.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(() =>
+        $('.reviews__slider').slick({
+          dots: true,
+        }),
+      );
+    </script>
   </body>
 </html>
