@@ -66,7 +66,7 @@
   height: 44px;
   border-radius: 22px;
   background-color: $btn-2-bg;
-
+  cursor: pointer;
   border: transparent;
   color: $btn-2-color;
   &:hover,
@@ -80,27 +80,34 @@
   -o-transition: background-color $fade-in-animation;
 }
 
-.button {
-  display: flex;
+.btn-6 {
   justify-content: center;
   border-radius: 22px;
   border: none;
-  padding: 10px 35px;
-  height: 44px;
-  background-color: #fff;
-  transition: color $fade-in-animation;
-  
 
-  &:hover {
+  width: 161px;
+  height: 44px;
+  background-color: $btn-2-bg;
+  transition: color $fade-in-animation;
+
+  transition: background-color $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation;
+  -o-transition: background-color $fade-in-animation;
+
+  &:hover,
+  &:focus {
     cursor: pointer;
-    background-color: #ecebeb;
+    background-color: $btn-2-bg-hover;
   }
 
-  &_solid {
-    background-color: #d41342;
+  &__solid {
+    background-color: $contacts-btn-color;
 
-    &:hover {
-      background-color: #D41342;
+    &:hover,
+    &:focus {
+      background-color: $contacts-btn-color;
     }
   }
 
@@ -110,17 +117,13 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    display: flex;
+
     align-items: center;
     text-align: center;
-    color: #d41342;
+    color: $contacts-btn-color;
 
     &_light {
-      color: #fff;
+      color: $btn-3-color;
     }
-  }
-
-  &__text:after {
-    content: '>';
   }
 }
