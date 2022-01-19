@@ -26,7 +26,7 @@ togglers.openAddress.forEach(item =>
 togglers.openFranchise.forEach(item =>
   item.addEventListener('click', () => handleOpenModal(modals.franchise)),
 );
-togglers.closeReadMore.forEach(item =>
+togglers.openReadMore.forEach(item =>
   item.addEventListener('click', () => handleOpenModal(modals.readmore)),
 );
 // close forms
