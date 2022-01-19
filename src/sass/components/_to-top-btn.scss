@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: 999;
   cursor: pointer;
   transition: box-shadow $fade-in-animation;
   color: $btn-2-color;
