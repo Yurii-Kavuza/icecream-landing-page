@@ -1,4 +1,12 @@
 .header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 
   @media screen and (max-width: 479px) {
     position: absolute;
@@ -8,29 +16,17 @@
     padding-right: 20px;
     width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    position: absolute;
-    z-index: 3;
-    padding-top: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 480px;
-  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    position: absolute;
-    z-index: 3;
+    display: flex;
     padding-top: 37px;
-    width: 740px;
     padding-left: 34px;
     padding-right: 34px;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
-    z-index: 3;
     padding-top: 37px;
-    width: 1200px;
     padding-left: 0;
 
   }
@@ -42,10 +38,16 @@
   }
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header-logo {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 290px;
+  }
+
   @media screen and (min-width: 1280px) {
     margin-right: 110px;
   }
