@@ -280,7 +280,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: $products-text-color;
+  background-color: $buttons-white-bg;
   border: none;
   margin: 0 auto;
   margin-top: 30px;
@@ -288,7 +288,8 @@
   cursor: pointer;
   transition: box-shadow $fade-in-animation, background-color $fade-in-animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     background-color: $btn-2-bg-hover;
   }

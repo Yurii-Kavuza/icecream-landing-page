@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,14 +40,17 @@
     <include src="./partials/modals/address.html"></include>
     <include src="./partials/modals/franchise.html"></include>
 
+    <include src="./partials/to-top-btn.html"></include>
+
     <include src="./partials/header.html"></include>
+
     <main>
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
       <include src="./partials/gallery.html"></include>
-      <!-- <include src="./partials/customer-reviews.html"></include> -->
+      <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
     </main>
 
@@ -55,17 +58,15 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="index.js"></script>
 
-    <script type="text/javascript">
+    <script>
       $(document).ready(() =>
         $('.reviews__slider').slick({
           dots: true,
+          arrows: false,
         }),
       );
     </script>
