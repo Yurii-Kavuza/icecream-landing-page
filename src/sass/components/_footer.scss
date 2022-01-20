@@ -139,6 +139,8 @@
 
   fill: #fea5bb;
 
+  transition: fill $fade-in-animation;
+
   &:hover,
   &:focus {
     fill: $h-text-color;
