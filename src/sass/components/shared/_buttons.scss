@@ -30,9 +30,13 @@
   background: $btn-2-bg;
   border-radius: 20px;
 
+  transition: box-shadow $fade-in-animation, background-color $fade-in-animation;
+
   &:hover,
   &:focus {
     background-color: $btn-2-bg-hover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
+    background-color: #ecebeb;
   }
 }
 
@@ -40,6 +44,7 @@
   color: $btn-3-color;
   background-color: $btn-3-bg;
   border-radius: 20px;
+  transition: box-shadow $fade-in-animation, background-color $fade-in-animation;
 
   @media screen and (min-width: 1280px) {
     padding-left: 23px;
@@ -49,6 +54,7 @@
   &:hover,
   &:focus {
     background-color: $btn-3-bg-hover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
   }
 }
 
@@ -72,12 +78,13 @@
   &:hover,
   &:focus {
     background-color: $btn-2-bg-hover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
   }
-  transition: background-color $fade-in-animation;
-  -webkit-transition: background-color $fade-in-animation;
-  -moz-transition: background-color $fade-in-animation;
-  -ms-transition: background-color $fade-in-animation;
-  -o-transition: background-color $fade-in-animation;
+  transition: background $fade-in-animation, box-shadow $fade-in-animation;
+  //-webkit-transition: background-color $fade-in-animation;
+  //-moz-transition: background-color $fade-in-animation;
+  //-ms-transition: background-color $fade-in-animation;
+  //-o-transition: background-color $fade-in-animation;
 }
 
 .btn-6 {
@@ -88,7 +95,7 @@
   width: 161px;
   height: 44px;
   background-color: $btn-2-bg;
-  transition: color $fade-in-animation;
+  transition: background $fade-in-animation, box-shadow $fade-in-animation;
 
   transition: background-color $fade-in-animation;
   -webkit-transition: background-color $fade-in-animation;
@@ -100,14 +107,15 @@
   &:focus {
     cursor: pointer;
     background-color: $btn-2-bg-hover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
   }
 
   &__solid {
-    background-color: $contacts-btn-color;
+    background-color: $btn-3-bg;
 
     &:hover,
     &:focus {
-      background-color: $contacts-btn-color;
+      background-color: $btn-3-bg-hover;
     }
   }
 
