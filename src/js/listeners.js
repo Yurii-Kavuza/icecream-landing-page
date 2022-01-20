@@ -26,6 +26,9 @@ togglers.openAddress.forEach(item =>
 togglers.openFranchise.forEach(item =>
   item.addEventListener('click', () => handleOpenModal(modals.franchise)),
 );
+togglers.openReadMore.forEach(item =>
+  item.addEventListener('click', () => handleOpenModal(modals.readmore)),
+);
 // close forms
 togglers.closeForm.forEach(item =>
   item.addEventListener('click', () => handleCloseModal(modals.form)),
@@ -35,6 +38,9 @@ togglers.closeAddress.forEach(item =>
 );
 togglers.closeFranchise.forEach(item =>
   item.addEventListener('click', () => handleCloseModal(modals.franchise)),
+);
+togglers.closeReadMore.forEach(item =>
+  item.addEventListener('click', () => handleCloseModal(modals.readmore)),
 );
 // handle map
 togglers.changeCity.forEach(item =>

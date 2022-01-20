@@ -9,6 +9,7 @@ export const modals = {
   form: document.querySelector('[data-modal="modal-form"]'),
   address: document.querySelector('[data-modal="modal-address"]'),
   franchise: document.querySelector('[data-modal="modal-franchise"]'),
+  readmore: document.querySelector('[data-modal="modal-readmore"]'),
 };
 
 export const togglers = {
@@ -18,6 +19,8 @@ export const togglers = {
   closeAddress: document.querySelectorAll('[data-action="modal-close-address"]'),
   openFranchise: document.querySelectorAll('[data-action="modal-open-franchise"]'),
   closeFranchise: document.querySelectorAll('[data-action="modal-close-franchise"]'),
+  openReadMore: document.querySelectorAll('[data-action="modal-open-readmore"]'),
+  closeReadMore: document.querySelectorAll('[data-action="modal-close-readmore"]'),
   changeCity: document.querySelectorAll('[data-action="change-city"]'),
 };
 

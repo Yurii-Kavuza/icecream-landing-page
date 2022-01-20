@@ -254,6 +254,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $products-text-color;
+
   @media screen and (min-width: 768px) {
     padding-left: 11px;
     padding-right: 11px;
@@ -279,16 +280,18 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: $products-text-color;
+  background-color: $buttons-white-bg;
   border: none;
   margin: 0 auto;
   margin-top: 30px;
   padding: 0;
   cursor: pointer;
-  transition: box-shadow $fade-in-animation;
+  transition: box-shadow $fade-in-animation, background-color $fade-in-animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-color: $btn-2-bg-hover;
   }
 
   @media screen and (min-width: 768px) {
