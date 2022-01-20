@@ -30,7 +30,11 @@
   background: $btn-2-bg;
   border-radius: 20px;
 
-  transition: box-shadow $fade-in-animation, background-color $fade-in-animation;
+  transition: background $fade-in-animation, box-shadow $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -o-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
 
   &:hover,
   &:focus {
@@ -44,7 +48,12 @@
   color: $btn-3-color;
   background-color: $btn-3-bg;
   border-radius: 20px;
-  transition: box-shadow $fade-in-animation, background-color $fade-in-animation;
+
+  transition: background $fade-in-animation, box-shadow $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -o-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
 
   @media screen and (min-width: 1280px) {
     padding-left: 23px;
@@ -81,10 +90,10 @@
     box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
   }
   transition: background $fade-in-animation, box-shadow $fade-in-animation;
-  //-webkit-transition: background-color $fade-in-animation;
-  //-moz-transition: background-color $fade-in-animation;
-  //-ms-transition: background-color $fade-in-animation;
-  //-o-transition: background-color $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -o-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
 }
 
 .btn-6 {
@@ -96,12 +105,10 @@
   height: 44px;
   background-color: $btn-2-bg;
   transition: background $fade-in-animation, box-shadow $fade-in-animation;
-
-  transition: background-color $fade-in-animation;
-  -webkit-transition: background-color $fade-in-animation;
-  -moz-transition: background-color $fade-in-animation;
-  -ms-transition: background-color $fade-in-animation;
-  -o-transition: background-color $fade-in-animation;
+  -webkit-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -moz-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -ms-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
+  -o-transition: background-color $fade-in-animation, box-shadow $fade-in-animation;
 
   &:hover,
   &:focus {
