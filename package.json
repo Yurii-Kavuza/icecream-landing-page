@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://VitaliyZavgorodniy.github.io/team-project",
+  "homepage": "https://VitaliyZavgorodniy.github.io/icecream-landing-page",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-group-11/"
+    "build": "parcel build src/*.html --public-url /icecream-landing-page/"
   },
   "repository": {
     "type": "git",
