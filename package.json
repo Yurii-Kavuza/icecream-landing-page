@@ -3,20 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://VitaliyZavgorodniy.github.io/icecream-landing-page",
+  "homepage": "https://Yurii-Kavuza.github.io/icecream-landing-page",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /icecream-landing-page/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Yurii-Kavuza/icecream-landing-page.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Yurii-Kavuza <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Yurii-Kavuza/icecream-landing-page/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
